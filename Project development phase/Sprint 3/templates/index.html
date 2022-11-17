@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>DIGITAL NATURALIST</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="../static/css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom Fonts from Google -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Logo and responsive toggle -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                	<span class="glyphicon glyphicon-fire"></span> 
+                	PNT2022TMID20771
+                </a>
+            </div>
+           
+    </nav>
+
+	<!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>DIGITAL NATURALIST</h1>
+                <p>An Artifical Intelligence powered tool for Bio-Diversity Researchers.</p>
+					<form action="/predict" id="upload-file" method="post" enctype="multipart/form-data">
+					<center><input type="file" name="uploadedimg" id="uploadedimg"  required accept=".jpg, .png, .jpeg, .gif, .bmp, .tif, .tiff|image/*" ></center>	
+						<br><br><input type="reset" value="Reset" class="btn6 upload">
+						<input type="submit" value="Upload" class="btn6 upload" onsubmit="check_file">
+					</form>
+				
+                
+                
+            </div>
+        </div>
+            
+        
+     
+    </header>
+   <script>
+            document.getElementById("uploadedimg").addEventListener("change", validateFile)
+            
+            function validateFile(){
+              const allowedExtensions =  ['jpg','png'],
+                    sizeLimit = 1_000_000;
+              const { name:fileName, size:fileSize } = this.files[0];
+              const fileExtension = fileName.split(".").pop();
+              if(!allowedExtensions.includes(fileExtension)){
+                alert("Only image files - .jpg, .jpeg, .png, .tiff ");
+                this.value = null;
+              }else if(fileSize > sizeLimit){
+                alert("file size too large")
+                this.value = null;
+              }
+            }</script>
+        
+
+       
+        
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <!-- Custom Javascript -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
