@@ -3,6 +3,7 @@ Digital Naturalist - AI Enabled tool for Biodiversity Researchers
 
 
 TECHNOLOGY : Artificial Intelligence
+
 TEAM ID : PNT2022TMID20771
 
 
@@ -18,9 +19,12 @@ In this project, we are creating a web application which uses a deep learning mo
 
 
 🧑🏻‍🦰 TEAM MEMBERS
-POONTHAMIZH B 
+POONTHAMIZH B
+
 KRISHNAPRIYA M 
+
 SNEHA L
+
 LIMASRI P
 
 
