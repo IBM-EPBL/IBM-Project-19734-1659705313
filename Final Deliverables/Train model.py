@@ -14,7 +14,7 @@ import numpy as np
 import tensorflow as tf
 import keras 
 import keras.backend as K
-from keras.optimizers import SGD, Adam, Adagrad, RMSprop
+from tensorflow.keras.optimizers import SGD, Adam, Adagrad, RMSprop
 from keras.applications import *
 from keras.preprocessing import *
 from keras.preprocessing.image import ImageDataGenerator
