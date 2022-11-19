@@ -89,7 +89,7 @@ def PrepreocessData(subfolders):
     for paths in subfolders:
         #setting folder path for each boat type
         files = glob.glob (paths + "/*.jpg")
-        found.append((paths.split('\\')[-2],paths.split('\\')[-1]))
+        found.append((paths.split('\\')[-1],paths.split('\\')[-1]))
         
         #itering all files under the folder one by one
         for myFile in files:
