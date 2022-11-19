@@ -5,6 +5,8 @@ import os
 import numpy as np
 import tensorflow as tf
 from flask import Flask, redirect, render_template, request
+#REST API
+from flask_restful import Resource,Api
 from keras.applications.inception_v3 import preprocess_input
 from keras.models import model_from_json
 from werkzeug.utils import secure_filename
