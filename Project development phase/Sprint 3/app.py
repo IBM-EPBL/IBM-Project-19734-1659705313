@@ -33,18 +33,18 @@ found = [
 app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
-def index():
-    # Home Page
+def login():
+    # Login Page
     return render_template("login.html")
 @app.route('/signup', methods=['GET'])
-def index1():
-    # Home Page
+def signup():
+    # Signup Page
     return render_template("signup.html")
 @app.route('/home', methods=['GET'])
-def index2():
+def home():
     # Home Page
     return render_template("index.html")
-
+  
 @app.route('/predict', methods=['GET', 'POST'])
 def upload():
     if request.method == 'GET':
