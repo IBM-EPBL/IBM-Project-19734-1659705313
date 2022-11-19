@@ -1,4 +1,5 @@
-![Digital Naturalist](https://user-images.githubusercontent.com/114243712/202372743-688a9310-d23e-45da-bcf2-4518781dafaf.png)
+![digital naturalist (2)](https://user-images.githubusercontent.com/84729040/202858672-1a392639-edca-485e-adbe-0c13a31a6955.jpg)
+
 Digital Naturalist - AI Enabled tool for Biodiversity Researchers
 
 
